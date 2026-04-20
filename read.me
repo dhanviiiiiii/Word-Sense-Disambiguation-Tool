@@ -1,0 +1,68 @@
+# 🧠 Word Sense Disambiguation System
+
+A Streamlit-based NLP application that identifies the correct meaning of an ambiguous word in a sentence using an **Improved Lesk Algorithm** and WordNet.
+
+---
+
+## 📌 Project Overview
+
+This project performs **Word Sense Disambiguation (WSD)** — the task of determining the correct meaning of a word based on its context.
+
+Example:
+- Sentence: *He went to the bank to deposit cash*
+- Word: *bank*
+- Output: **Financial institution**
+
+The system uses **WordNet**, **semantic relationships**, and **context-based scoring** to improve accuracy.
+
+---
+
+## 🚀 Features
+
+- ✅ Improved Lesk Algorithm
+- ✅ Context window-based analysis
+- ✅ Stopword removal
+- ✅ Lemmatization
+- ✅ POS tagging for accurate sense selection
+- ✅ Semantic expansion using:
+  - Definitions
+  - Examples
+  - Hypernyms
+  - Hyponyms
+- ✅ Rule-based scoring (financial domain)
+- ✅ Confidence score display
+- ✅ Synonyms for selected meaning
+- ✅ Top competing meanings
+- ✅ All possible meanings with synonyms (WordNet explorer)
+
+---
+
+## ⚙️ Technologies Used
+
+- Python
+- Streamlit (for UI)
+- NLTK (Natural Language Toolkit)
+- WordNet (lexical database)
+
+---
+
+## 📂 Project Structure
+WSD_Project/
+│── app.py
+│── README.md
+
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1. Install Dependencies
+
+```bash
+pip install streamlit nltk
+
+## Run application
+streamlit run app.py
+
+## Browser
+http://localhost:8501
